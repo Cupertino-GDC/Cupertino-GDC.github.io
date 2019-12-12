@@ -3,6 +3,6 @@ function buttonFade() {
 
 }
 
-functino buttonShow() {
+function buttonShow() {
 
 }
