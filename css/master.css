@@ -75,14 +75,18 @@ nav > button {
 
 .info-box {
   background-color: #ececec;
+  display: flex;
+  flex-direction: row;
 }
 
 .info-box-text > h2 {
   font-size: 40px;
   font-weight:normal;
+  margin-bottom: 50px;
 }
 
 .info-box-text {
   color:black;
   margin: 10%;
+  line-height: 30pt;
 }
