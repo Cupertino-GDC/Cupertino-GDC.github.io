@@ -2,6 +2,10 @@
 
 }
 
+a:visited {
+  color:#ececec;
+}
+
 body {
   flex-direction: column;
   background-color: #002566;
@@ -77,9 +81,9 @@ nav > button {
   background-color: #ececec;
   display: flex;
   flex-direction: row;
-  width:110%;
-  position:absolute;
-  left:-30px;
+  width:110vw;
+  margin-left: -50px;
+  align-items: center;
 }
 
 .info-box-text > h2 {
