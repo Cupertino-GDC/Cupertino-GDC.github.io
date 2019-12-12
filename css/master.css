@@ -15,10 +15,7 @@ body {
 
 h1 {
   font-weight: normal;
-}
-
-h2 {
-  font-weight: normal;
+  font-size: 50px;
 }
 
 nav {
@@ -60,7 +57,7 @@ nav > button {
 }
 
 .menu-button:active {
-  
+
 }
 
 #big-text-holder {
@@ -75,7 +72,17 @@ nav > button {
   font-size: 30px;
 }
 
+
 .info-box {
   background-color: #ececec;
+}
+
+.info-box-text > h2 {
+  font-size: 40px;
+  font-weight:normal;
+}
+
+.info-box-text {
   color:black;
+  margin: 10%;
 }
