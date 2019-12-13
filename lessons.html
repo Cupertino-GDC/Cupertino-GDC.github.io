@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="scripts/queryfuncs.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="scripts/queryfuncs.js"></script>
   <script type="text/javascript" src="scripts/helper.js"></script>
   <link type="text/css" rel="stylesheet" href="css/master.css">
+  <link type="text/css" rel="stylesheet" href="css/lessons.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,5 +22,59 @@
       <a href="contact-us.html"><button class = "menu-button">Contact Us</button></a>
     </nav>
   </header>
+
+  <div id="main">
+    <h1 style="margin-top: 120px; margin-bottom: 60px">Pick Your Path</h1>
+    <div id="lesson-options-container">
+      <a href="#fundamentals"><button type="button" name="Fundamentals" class="lesson-option">Fundamentals</button></a>
+      <a href="#blender"><button type="button" name="Blender" class="lesson-option">Blender</button></a>
+      <a href="#mlagents"><button type="button" name="ML Agents" class="lesson-option">ML Agents</button></a>
+    </div>
+
+    <!-- Fundamentals Category -->
+    <h2 class="lesson-section-header">Fundamentals</h2>
+    <div id="fundamentals" class="lesson-category">
+      <button type="button" name="Intro to Unity" class="lesson-option" onclick="openLesson('introToUnity')">
+        Lesson
+      </button>
+      <button type="button" name="Sculpting" class="lesson-option" onclick="openLesson('sculpting')">
+        Lesson
+      </button>
+      <button type="button" name="Sculpting" class="lesson-option" onclick="openLesson('sculpting')">
+        Lesson
+      </button>
+      <button type="button" name="Sculpting" class="lesson-option" onclick="openLesson('sculpting')">
+        Lesson
+      </button>
+    </div>
+    <!-- Blender Category -->
+    <h2 class="lesson-section-header">Blender</h2>
+    <div id="blender" class="lesson-category">
+      <button type="button" name="Sculpting" class="lesson-option" onclick="openLesson('sculpting')">
+        Sculpting
+      </button>
+      <button type="button" name="Painting" class="lesson-option" onclick="openLesson('painting')">
+        Painting
+      </button>
+      <button type="button" name="Animating" class="lesson-option" onclick="openLesson('animating')">
+        Animating
+      </button>
+    </div>
+
+    <!-- ML Agents Category -->
+    <h2 class="lesson-section-header">ML Agents</h2>
+    <div id="mlagents" class="lesson-category">
+      <button type="button" name="Intro to Unity" class="lesson-option" onclick="openLesson('introToUnity')">
+        Lesson
+      </button>
+      <button type="button" name="Intro to Unity" class="lesson-option" onclick="openLesson('introToUnity')">
+        Lesson
+      </button>
+    </div>
+  </div>
+
+  <div id="options-container">
+
+  </div>
 </body>
 </html>

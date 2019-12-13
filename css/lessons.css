@@ -1,0 +1,45 @@
+#lesson-options-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: montserrat;
+  font-size: 30px;
+  font-weight: normal;
+  margin-bottom:50px;
+}
+
+.lesson-option {
+  background-color: #ececec;
+  color: #000000;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  padding: 20px;
+  margin: 30px;
+  border-radius: 6px;
+  letter-spacing: 2px;
+}
+
+.lesson-option:hover {
+  background-color: #888888;
+}
+
+.lesson-category {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.lesson-section-header {
+  letter-spacing: 2px;
+  font-weight:normal;
+}
