@@ -11,7 +11,7 @@
   margin-bottom:50px;
 }
 
-.lesson-option {
+/* .lesson-option {
   background-color: #ececec;
   color: #000000;
   border: none;
@@ -22,7 +22,10 @@
   margin: 30px;
   border-radius: 6px;
   letter-spacing: 2px;
-}
+  transition: background-color .1s ease-out 0s;
+  outline-style: none;
+  cursor: pointer;
+} */
 
 .lesson-option:hover {
   background-color: #888888;
@@ -30,16 +33,54 @@
 
 .lesson-category {
   display:flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
   align-items: center;
   justify-content: center;
   margin-top: 20px;
   margin-bottom: 50px;
+  width:90%;
+  background-color: #ececec;
+  padding: 20px;
+  border-radius: 6px;
 }
 
 .lesson-section-header {
   letter-spacing: 2px;
   font-weight:normal;
+  color: #022566;
+}
+
+.lesson-option > img {
+  overflow: hidden;
+}
+
+.lesson-option {
+  margin: 10px;
+  height: 50px;
+  width: 90%;
+  background-size: cover;
+  outline-style: none;
+  box-shadow: none;
+  font-size: 20px;
+  font-family: montserrat;
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  letter-spacing: 2px;
+  border-radius: 6px;
+  text-align: right;
+  background-color: #022566;
+  color: #ececec;
+}
+
+#test-category {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  width:100%;
 }

@@ -2,6 +2,8 @@
 
 }
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
 html {
   scroll-behavior: smooth;
 }
@@ -17,8 +19,7 @@ a:link {
 body {
   flex-direction: column;
   background-color: #002566;
-  font-family: montserrat;
-  /* font-weight:bold; */
+  font-family: 'Montserrat',sans-serif;
   /* color: #eef655; */
   color: #ececec;
   letter-spacing: 2px;
@@ -33,11 +34,15 @@ h1 {
 nav {
   display:flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   font-size: 20px;
   justify-content: space-between;
-  margin: 20px;
-
+  align-items: center;
+  background-color: #ececec;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 #main {
@@ -60,14 +65,16 @@ nav {
   cursor: pointer;
   border: none;
   background-color: rgba(0, 0, 0, 0);
-  color: inherit;
-  padding: 10px;
+  color: #002566;
+  padding: 30px;
   letter-spacing: 2px;
   border-radius: 6px;
+  transition: font-weight .1s ease-out 0s;
+  outline-style: none;
 }
 
-.menu-button:active {
-
+.menu-button:hover {
+  font-weight: 700;
 }
 
 #big-text-holder {
@@ -87,8 +94,7 @@ nav {
   background-color: #ececec;
   display: flex;
   flex-direction: row;
-  width:110vw;
-  margin-left: -50px;
+  width:90%;
   align-items: center;
 }
 
