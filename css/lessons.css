@@ -22,14 +22,10 @@
   margin: 30px;
   border-radius: 6px;
   letter-spacing: 2px;
-  transition: background-color .1s ease-out 0s;
-  outline-style: none;
-  cursor: pointer;
+
 } */
 
-.lesson-option:hover {
-  background-color: #888888;
-}
+
 
 .lesson-category {
   display:flex;
@@ -70,9 +66,16 @@
   padding: 10px;
   letter-spacing: 2px;
   border-radius: 6px;
-  text-align: right;
+  text-align: left;
   background-color: #022566;
   color: #ececec;
+  transition-timing-function: ease-out;
+  transition: height .1s, font-weight .1s;
+}
+
+.lesson-option:hover {
+  height: 60px;
+  font-weight: 700;
 }
 
 #test-category {

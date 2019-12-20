@@ -2,7 +2,7 @@ $(document).ready(function() {
   $("header").load("html-snippets/navbar.html", function() {
     var navHeight = document.getElementById("navbar").offsetHeight;
     console.log("Nav: " + navHeight);
-    $("#page-depressant").css("height", "" + (navHeight + 20));
+    $("#page-depressant").css("height", "" + (navHeight + 22));
   });
 
 
@@ -20,4 +20,4 @@ $(document).ready(function() {
           $("#page-depressant").css("height", "" + navHeight);
       }
   }, 300);
-})
+});
