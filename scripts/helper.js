@@ -31,3 +31,7 @@ function openLesson(lessonName) {
     console.log("Lesson does not exist");
   }
 }
+
+function sendMail(message){
+  
+}
