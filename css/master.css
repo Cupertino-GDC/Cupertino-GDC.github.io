@@ -16,6 +16,8 @@ a:link {
   color:#ececec;
 }
 
+
+
 body {
   flex-direction: column;
   background-color: #002566;
@@ -23,7 +25,6 @@ body {
   /* color: #eef655; */
   color: #ececec;
   letter-spacing: 2px;
-
 }
 
 h1 {
