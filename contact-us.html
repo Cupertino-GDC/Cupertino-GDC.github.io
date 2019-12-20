@@ -23,15 +23,27 @@
     </nav>
   </header>
 
-  <form name="htmlform" method="post" action="html_form_send.php">
-  <table width="450px">
+  <h2 class="ContactFormHeader">Contact Us!</h2>
+
+  <form action="mailto:cupertinogamedev@gmail.com" method="post" enctype="text/plain">
+    Name:<br>
+    <input type="text" name="name"><br>
+    Email:<br>
+    <input type="text" name="mail"><br>
+    Message:<br>
+    <input type="text" name="message" size="50"><br><br>
+    <input type="submit" value="Send">
+    <input type="reset" value="Reset">
+  </form>
+
+  <!-- <table width="450px">
   </tr>
   <tr>
    <td valign="top">
     <label for="first_name">First Name*</label>
    </td>
    <td valign="top">
-    <input  type="text" name="first_name" maxlength="50" size="30">
+    <input  type="text" name="first_name" maxlength="200" size="120">
    </td>
   </tr>
 
@@ -70,12 +82,13 @@
 
   </tr>
   <tr>
-   <td colspan="2" style="text-align:center">
-    <input type="submit" value="Submit">   ( <a href="https://www.freecontactform.com/html_form.php">HTML Form</a> )
+   <td colspan="2" style="button-valign:center">
+     <button type="button" name="Submit" class="lesson-option" onclick="sendMail('Hi GDC!')">
+       Submit
+     </button>
    </td>
   </tr>
-  </table>
-  </form>
+  </table> -->
 
 </body>
 </html>
