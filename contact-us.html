@@ -6,20 +6,16 @@
   <script src="scripts/queryfuncs.js"></script>
   <script type="text/javascript" src="scripts/helper.js"></script>
   <link type="text/css" rel="stylesheet" href="css/master.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Cupetino GDC Contacts</title>
+
 </head>
 <body>
   <header>
     <nav>
-      <a href="index.html"><button class = "menu-button" ><img src="imgs/GDCLogo_Croppeede.png" width=156px></button></a>
-      <a href="lessons.html"><button class = "menu-button">Lessons</button></a>
-      <a href="game-ideas.html"><button class = "menu-button">Game Ideas</button></a>
-      <a href="discussions.html"><button class = "menu-button">Discussions</button></a>
-      <a href="contact-us.html"><button class = "menu-button">Contact Us</button></a>
+      <!-- Nav will be pasted here via JS -->
     </nav>
   </header>
 
@@ -28,16 +24,16 @@
   </tr>
   <tr>
    <td valign="top">
-    <label for="first_name">First Name *</label>
+    <label for="first_name">First Name*</label>
    </td>
    <td valign="top">
-    <input  type="text" name="first_name" maxlength="50" size="30">
+    <input  type="text" name="first_name" maxlength="200" size="120">
    </td>
   </tr>
 
   <tr>
    <td valign="top"">
-    <label for="last_name">Last Name *</label>
+    <label for="last_name">Last Name*</label>
    </td>
    <td valign="top">
     <input  type="text" name="last_name" maxlength="50" size="30">
@@ -45,16 +41,15 @@
   </tr>
   <tr>
    <td valign="top">
-    <label for="email">Email Address *</label>
+    <label for="email">Email Address*</label>
    </td>
    <td valign="top">
     <input  type="text" name="email" maxlength="80" size="30">
    </td>
-
   </tr>
   <tr>
    <td valign="top">
-    <label for="telephone">Telephone Number</label>
+    <label for="telephone">Phone Number</label>
    </td>
    <td valign="top">
     <input  type="text" name="telephone" maxlength="30" size="30">
@@ -62,20 +57,20 @@
   </tr>
   <tr>
    <td valign="top">
-    <label for="comments">Comments *</label>
+    <label for="comments">Comments*</label>
    </td>
    <td valign="top">
     <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
    </td>
-
   </tr>
   <tr>
-   <td colspan="2" style="text-align:center">
-    <input type="submit" value="Submit">   ( <a href="https://www.freecontactform.com/html_form.php">HTML Form</a> )
+   <td colspan="2" style="button-valign:center">
+     <button type="button" name="Submit" class="lesson-option" onclick="sendMail('Hi GDC!')">
+       Submit
+     </button>
    </td>
   </tr>
   </table>
   </form>
-
 </body>
 </html>
