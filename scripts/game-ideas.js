@@ -40,14 +40,14 @@ function getIdeaIndexes(query) {
   return indexes;
 }
 
-function openIdea() {
-  let link = database[itemIndex]['gsx$link']['$t'];
+function openIdea(link) {
+  window.open(link);
 }
 
 function createCard(itemIndex) {
   let str = `<div class="game-idea-item">
     <img src="imgs/ph0s.jpg" alt="img" style="height: 100%; ">
-    <div class="game-idea-overlay" onclick="openIdea()">
+    <div class="game-idea-overlay" onclick="openIdea('yahoo.com')">
       <div class="game-idea-title">
         Bruh Bruh
       </div>
@@ -58,14 +58,10 @@ function createCard(itemIndex) {
   </div>`;
   let $card = $(document.createRange().createContextualFragment(str));
   let $cardChildren = $card.children().eq(0).children();
-  console.log(JSON.stringify($cardChildren));
-  console.log(database[itemIndex]['gsx$image']['$t']);
   $cardChildren.eq(0).attr("src", database[itemIndex]['gsx$image']['$t']);
+  $cardChildren.eq(1).attr("onclick", "openIdea('" + database[itemIndex]['gsx$link']['$t'] + "')")
   $cardChildren.eq(1).children().eq(0).text(database[itemIndex]['gsx$name']['$t']);
   $cardChildren.eq(1).children().eq(1).text(database[itemIndex]['gsx$description']['$t']);
-  // $card.children("img").attr("img", database[itemIndex]['gsx$image']['$t']);
-  // $card.children("div.game-idea-title").children("div.game-idea-title").text(database[itemIndex]['gsx$name']['$t']);
-  // $card.children("div.game-idea-overlay").children("div.game-idea-text").text(database[itemIndex]['gsx$description']['$t']);
   console.log($card.outerHTML);
   $card.appendTo($cardContainer);
 }
