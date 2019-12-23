@@ -1,7 +1,8 @@
 $(document).ready(function() {
   $("header").load("html-snippets/navbar.html", function() {
+    $("a[href='" + location.pathname.substring(1) + "']").addClass("current");
+
     var navHeight = document.getElementById("navbar").offsetHeight;
-    console.log("Nav: " + navHeight);
     $("#page-depressant").css("height", "" + (navHeight + 22));
   });
 
@@ -16,7 +17,6 @@ $(document).ready(function() {
           height = $window.height();
 
           var navHeight = document.getElementById("navbar").offsetHeight;
-          console.log("Nav: " + navHeight);
           $("#page-depressant").css("height", "" + navHeight);
       }
   }, 300);

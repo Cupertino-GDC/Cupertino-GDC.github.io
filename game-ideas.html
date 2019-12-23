@@ -5,11 +5,13 @@
   <script src="scripts/queryfuncs.js"></script>
   <script type="text/javascript" src="scripts/helper.js"></script>
   <link type="text/css" rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/game-ideas.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Cupetino GDC Game Ideas</title>
+  <title>Cupertino GDC Game Ideas</title>
 
+  <script src="scripts/game-ideas.js"></script>
 </head>
 <body>
   <header>
@@ -17,5 +19,14 @@
       <!-- Nav will be pasted here via JS -->
     </nav>
   </header>
+
+  <div id="main">
+    <h1 class="page-header">Find an idea</h1>
+    <input type="text" name="game-search" placeholder="Search..." onkeyup="beginSearch()" id="gamesearch">
+
+    <!-- Idea Cards will be placed in here. -->
+    <div id="card-container"></div>
+  </div>
+
 </body>
 </html>
