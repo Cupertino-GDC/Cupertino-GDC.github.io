@@ -1,0 +1,21 @@
+#sm-bar {
+  display: flex;
+  flex-direction: row;
+}
+#sm-bar a {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#contacts-container {
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  width: 90%;
+}
+
+#contacts-container div {
+  margin: 10px;
+  font-size: 20pt;
+}

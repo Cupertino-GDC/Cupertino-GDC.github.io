@@ -4,8 +4,11 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="scripts/queryfuncs.js"></script>
+  <script src="contact-us.js"></script>
   <script type="text/javascript" src="scripts/helper.js"></script>
   <link type="text/css" rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/contact-us.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -18,63 +21,21 @@
       <!-- Nav will be pasted here via JS -->
     </nav>
   </header>
-  
-  <div>
-    <form name="htmlform" method="post" action="html_form_send.php">
-    <table width="450px">
-    </tr>
-    <tr>
-     <td valign="top">
-      <label for="first_name">First Name*</label>
-     </td>
-     <td valign="top">
-      <input  type="text" name="first_name" maxlength="200" size="120">
-     </td>
-    </tr>
 
-    <tr>
-     <td valign="top">
-      <label for="last_name">Last Name*</label>
-     </td>
-     <td valign="top">
-      <input  type="text" name="last_name" maxlength="50" size="30">
-     </td>
-    </tr>
-    <tr>
-     <td valign="top">
-      <label for="email">Email Address*</label>
-     </td>
-     <td valign="top">
-      <input  type="text" name="email" maxlength="80" size="30">
-     </td>
-
-    </tr>
-    <tr>
-     <td valign="top">
-      <label for="telephone">Phone Number</label>
-     </td>
-     <td valign="top">
-      <input  type="text" name="telephone" maxlength="30" size="30">
-     </td>
-    </tr>
-    <tr>
-     <td valign="top">
-      <label for="comments">Comments*</label>
-     </td>
-     <td valign="top">
-      <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
-     </td>
-
-    </tr>
-    <tr>
-     <td colspan="2" style="button-valign:center">
-       <button type="button" name="Submit" class="lesson-option" onclick="sendMail('Hi GDC!')">
-         Submit
-       </button>
-     </td>
-    </tr>
-    </table>
-    </form>
+  <div id="main">
+    <h1 class="page-header">Contact Us</h1>
+    <!-- Email, Location, Social Media, Advisor -->
+    <div id="contacts-container">
+      <div>Email: cupertinogamedev@gmail.com</div>
+      <div>Location: Room 723, Cupertino High School</div>
+      <div>Club Advisor: Ted McLeod</div>
+      <div id="sm-bar">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/Cupertino-Game-Development-Club-515386358867050/?ref=bookmarks"><i class="fa fa-facebook fa-2x"></i></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/cupertinogamedevclub/"><i class="fa fa-instagram fa-2x"></i></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://cupertinogamedev.itch.io/"><img src="imgs/itchio-2019/logos/itchio-logo-textless-white.png" style="height: 52.8px;"></a>
+      </div>
+    </div>
   </div>
+
 </body>
 </html>
