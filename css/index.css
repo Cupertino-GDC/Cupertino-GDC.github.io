@@ -1,0 +1,49 @@
+@keyframes slide-animation {
+  0% {
+    bottom: 0;
+  }
+  25% {
+    bottom: 0;
+  }
+  33% {
+    bottom: 100%;
+  }
+  58% {
+    bottom: 100%;
+  }
+  66% {
+    bottom: 200%;
+  }
+  91% {
+    bottom: 200%;
+  }
+  99% {
+    animation-timing-function: steps(1, end);
+    bottom: 300%;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+#slider,  #slider .slide{
+  width: 300px;
+  height: 100px;
+}
+#slider {
+  overflow: hidden;
+  margin: 0 auto;
+  font-size: 60pt;
+  /* background: #ffd7d1; */
+}
+#slider .container {
+  position: relative;
+  bottom: 0;
+  right: 0;
+  animation: slide-animation 8s infinite;
+}
+#slider .slide {
+  position: relative;
+  box-sizing: border-box;
+  padding: 10px 20px;
+}
