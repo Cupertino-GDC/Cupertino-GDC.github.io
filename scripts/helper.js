@@ -1,4 +1,3 @@
-
 function buttonFade() {
 
 }
@@ -33,5 +32,5 @@ function openLesson(lessonName) {
 }
 
 function sendMail(message){
-  
+
 }
