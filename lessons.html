@@ -3,6 +3,7 @@
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="scripts/queryfuncs.js"></script>
+  <script src="scripts/lessons.js"></script>
   <script type="text/javascript" src="scripts/helper.js"></script>
   <link type="text/css" rel="stylesheet" href="css/master.css">
   <link type="text/css" rel="stylesheet" href="css/lessons.css">
@@ -11,7 +12,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <title>Cupetino GDC Lessons</title>
+  <title>Cupertino GDC Lessons</title>
 </head>
 <body>
   <header>
@@ -20,10 +21,11 @@
 
   <div id="main">
     <h1 class="page-header">Pick Your Path</h1>
-    <div id="lesson-options-container">
-      <a href="#fundamentals"><button type="button" name="Fundamentals" class="lesson-option">Fundamentals</button></a>
-      <a href="#blender"><button type="button" name="Blender" class="lesson-option">Blender</button></a>
-      <a href="#mlagents"><button type="button" name="ML Agents" class="lesson-option">ML Agents</button></a>
+    <div id="lesson-categories-container">
+      <button type="button" name="Fundamentals" class="lesson-option" onclick="goToSection('#fundamentals')">Fundamentals</button>
+      <button type="button" name="Blender" class="lesson-option" onclick="goToSection('#blender')">Blender</button>
+      <button type="button" name="ML Agents" class="lesson-option" onclick="goToSection('#mlagents')">ML Agents</button>
+      <button type="button" name="Cinemachine" class="lesson-option" onclick="goToSection('#advanced-unity')">Advanced Unity</button>
     </div>
 
     <!-- All buttons should have images inside of them by the time the page is completed. -->
@@ -32,65 +34,75 @@
 
     <div id="fundamentals" class="lesson-category">
       <h2 class="lesson-section-header">Fundamentals</h2>
+      <div class="lesson-options-container">
+        <button type="button" name="Intro to Unity" class="lesson-option" onclick="openLesson('introToUnity')">
+          Intro to Unity
+        </button>
+        <button type="button" name="  Intro to C#" class="lesson-option" onclick="openLesson('introToC')">
+          Intro to C#
+        </button>
+        <button type="button" name="APIs, GameObjects, and Monobehavior" class="lesson-option" onclick="openLesson('APIsGameObjectsMonobehavior')">
+          APIs, GameObjects, and Monobehavior
+        </button>
+        <button type="button" name="User Input" class="lesson-option" onclick="openLesson('UserInput')">
+          User Input
+        </button>
+        <button type="button" name="Vectors" class="lesson-option" onclick="openLesson('Vectors')">
+          Vectors
+        </button>
+        <button type="button" name="Unity Physics: Colliders & Rigidbodies" class="lesson-option" onclick="openLesson('Physics')">
+          Unity Physics: Colliders & Rigidbodies
+        </button>
+        <button type="button" name="UI & SceneManager" class="lesson-option" onclick="openLesson('UISceneManager')">
+          UI & SceneManager
+        </button>
 
-      <button type="button" name="Intro to Unity" class="lesson-option" onclick="openLesson('introToUnity')">
-        Intro to Unity
-      </button>
-      <button type="button" name="  Intro to C#" class="lesson-option" onclick="openLesson('introToC')">
-        Intro to C#
-      </button>
-      <button type="button" name="APIs, GameObjects, and Monobehavior" class="lesson-option" onclick="openLesson('APIsGameObjectsMonobehavior')">
-        APIs, GameObjects, and Monobehavior
-      </button>
-      <button type="button" name="User Input" class="lesson-option" onclick="openLesson('UserInput')">
-        User Input
-      </button>
-      <button type="button" name="Vectors" class="lesson-option" onclick="openLesson('Vectors')">
-        Vectors
-      </button>
-      <button type="button" name="Animator" class="lesson-option" onclick="openLesson('Animator')">
-        Animator
-      </button>
-      <button type="button" name="Unity Physics: Colliders & Rigidbodies" class="lesson-option" onclick="openLesson('Physics')">
-        Unity Physics: Colliders & Rigidbodies
-      </button>
-      <button type="button" name="UI & SceneManager" class="lesson-option" onclick="openLesson('UISceneManager')">
-        UI & SceneManager
-      </button>
-      <button type="button" name="Lights n' Effects" class="lesson-option" onclick="openLesson('LightsnEffects')">
-        Lights n' Effects
-      </button>
-
+      </div>
     </div>
 
     <!-- Blender Category -->
     <div id="blender" class="lesson-category">
       <h2 class="lesson-section-header">Blender</h2>
-      <button type="button" name="Sculpting" class="lesson-option" onclick="openLesson('sculpting')">
-        Sculpting
-      </button>
-      <button type="button" name="Painting" class="lesson-option" onclick="openLesson('painting')">
-        Painting
-      </button>
-      <button type="button" name="Animating" class="lesson-option" onclick="openLesson('animating')">
-        Animating
-      </button>
+      <div class="lesson-options-container">
+        <button type="button" name="Sculpting" class="lesson-option" onclick="openLesson('sculpting')">
+          Sculpting
+        </button>
+        <button type="button" name="Painting" class="lesson-option" onclick="openLesson('painting')">
+          Painting
+        </button>
+        <button type="button" name="Animating" class="lesson-option" onclick="openLesson('animating')">
+          Animating
+        </button>
+      </div>
     </div>
 
     <!-- ML Agents Category -->
     <div id="mlagents" class="lesson-category">
       <h2 class="lesson-section-header">ML Agents</h2>
-      <button type="button" name="Intro to Unity" class="lesson-option" onclick="openLesson('introToUnity')">
-        Lesson
-      </button>
-      <button type="button" name="Intro to Unity" class="lesson-option" onclick="openLesson('introToUnity')">
-        Lesson
-      </button>
+      <div class="lesson-options-container">
+        <button type="button" name="Intro to Unity" class="lesson-option" onclick="openLesson('introToUnity')">
+          Lesson
+        </button>
+        <button type="button" name="Intro to Unity" class="lesson-option" onclick="openLesson('introToUnity')">
+          Lesson
+        </button>
+      </div>
     </div>
-  </div>
 
-  <div id="options-container">
-
+    <div id="advanced-unity" class="lesson-category">
+      <h2 class="lesson-section-header">Advanced Unity</h2>
+      <div class="lesson-options-container">
+        <button type="button" name="Animator" class="lesson-option" onclick="openLesson('Animator')">
+          Animator
+        </button>
+        <button type="button" name="Lights n' Effects" class="lesson-option" onclick="openLesson('LightsnEffects')">
+          Lights n' Effects
+        </button>
+        <button type="button" name="Cinemachine" class="lesson-option" onclick="openLesson('cinemachine')">
+          Cinemachine
+        </button>
+      </div>
+    </div>
   </div>
 </body>
 </html>

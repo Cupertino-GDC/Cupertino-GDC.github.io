@@ -55,6 +55,10 @@ nav {
   z-index: 1000;
 }
 
+#GDCLogo {
+  width: 156px;
+}
+
 #main {
   display: flex;
   align-items: center;
@@ -81,6 +85,23 @@ nav {
   transition: font-weight .1s ease-out 0s;
   outline-style: none;
 }
+#GDCButton {
+  padding: 18px;
+}
+@media only screen and (max-width: 600px) {
+  .menu-button {
+    padding: 10px;
+    font-size: 12px;
+    letter-spacing: 0px;
+  }
+
+  #GDCLogo {
+    width: 40px;
+  }
+  #GDCButton {
+    padding: 10px;
+  }
+}
 
 .menu-button:hover {
   font-weight: 700;
@@ -104,12 +125,18 @@ nav {
   font-size: 30px;
 }
 
+.big-info-box {
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  width: 95%;
+}
 
 .info-box {
   /* background-color: var(--c1); */
   display: flex;
-  flex-direction: row;
-  width:90%;
+  flex-direction: column;
+  width: auto;
   align-items: center;
   border-radius: 6px;
   margin: 20px;
@@ -123,7 +150,7 @@ nav {
 
 .info-box-text {
   color: var(--c1);
-  margin: 10%;
+  margin: 30px;
   line-height: 30pt;
 }
 
@@ -133,7 +160,7 @@ nav {
 }
 
 @media only screen and (max-width: 1000px) {
-  .info-box {
+  .big-info-box {
     flex-direction: column;
   }
 }

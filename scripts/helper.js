@@ -1,15 +1,7 @@
-function buttonFade() {
-
-}
-
-function buttonShow() {
-
-}
-
 var links = {
   introToUnity: "https://cupertino-gdc.github.io",
-  introToC: "https://cupertino-gdc.github.io",
-  APIsGameObjectsMonobehavior: "https://cupertino-gdc.github.io",
+  introToC: "https://docs.google.com/presentation/d/e/2PACX-1vSjnHI3hoFsXnkEmZAWfEIm5m4xsjJrvi7uv1XIb9GwpI9tW6GfYmD5jKjp-L5A14TmtGhDrzLbc-aL/pub?start=false&loop=false&delayms=3000",
+  APIsGameObjectsMonobehavior: "https://docs.google.com/presentation/d/e/2PACX-1vSOWu2Pfcx6GxxVT9D-KYBxQeY9XgE9ltgpuQ3OaX6kcYwiXyhpHYVVA5V-DjHc487QtHaOOwkj0CQU/pub?start=false&loop=false&delayms=3000",
   UserInput: "https://cupertino-gdc.github.io",
   Vectors: "https://cupertino-gdc.github.io",
   Animators: "https://cupertino-gdc.github.io",
@@ -18,8 +10,8 @@ var links = {
   LightsnEffects: "https://cupertino-gdc.github.io",
   sculpting: "https://docs.google.com/presentation/d/e/2PACX-1vTszCzRxCCJ7-JTpbHpUVSvTYJ7MID24PBhwvgY2M0qYkUF0BscYGzGl6rxn7wKkC-ap0IeWNQTRBUX/pub?start=false&loop=false&delayms=3000",
   painting: "https://docs.google.com/presentation/d/e/2PACX-1vRets4WF_lfCmrv00ZxLr08_8FlH2ZUxeCDEvc7sRhf7QqZaVWcZ6H1GGwNJWfurpKTkgN7p8kp9c5S/pub?start=false&loop=false&delayms=3000",
-  animating: "https://docs.google.com/presentation/d/e/2PACX-1vQr_ZzfxG3d6MIjXhmTKX3Gnx6B9aErdo4dJb9MM09-utsWHyMJOgQX9zf7-h9xHOBnRB6Eb3goEYna/pub?start=false&loop=false&delayms=3000"
-
+  animating: "https://docs.google.com/presentation/d/e/2PACX-1vQr_ZzfxG3d6MIjXhmTKX3Gnx6B9aErdo4dJb9MM09-utsWHyMJOgQX9zf7-h9xHOBnRB6Eb3goEYna/pub?start=false&loop=false&delayms=3000",
+  cinemachine: "https://docs.google.com/presentation/d/e/2PACX-1vT33YuTNqDICgII9KzAM59p683O-khvPoelzh1kbSVtOJpJrcKMy4LQ4m_hGtqEHca4FgPvPVZsOk02/pub?start=false&loop=false&delayms=3000"
 }
 
 function openLesson(lessonName) {
@@ -29,8 +21,4 @@ function openLesson(lessonName) {
   {
     console.log("Lesson does not exist");
   }
-}
-
-function sendMail(message){
-
 }
