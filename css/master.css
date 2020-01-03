@@ -1,5 +1,6 @@
 :root {
-
+  --c1: rgba(236, 236, 255, 0.7);
+  --c2: rgba(0, 37, 102, 1);
 }
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
@@ -9,11 +10,11 @@ html {
 }
 
 a:visited {
-  color:#ececec;
+  color: var(--c1);
 }
 
 a:link {
-  color:#ececec;
+  color: var(--c1);
 }
 
 .current > .menu-button {
@@ -23,10 +24,13 @@ a:link {
 
 body {
   flex-direction: column;
-  background-color: #002566;
+  background-image: url("/imgs/controller.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   font-family: 'Montserrat',sans-serif;
   /* color: #eef655; */
-  color: #ececec;
+  color: var(--c1);
   letter-spacing: 2px;
 }
 
@@ -71,7 +75,7 @@ nav {
   cursor: pointer;
   border: none;
   background-color: rgba(0, 0, 0, 0);
-  color: #002566;
+  color: var(--c2);
   padding: 30px;
   letter-spacing: 2px;
   transition: font-weight .1s ease-out 0s;
@@ -102,7 +106,7 @@ nav {
 
 
 .info-box {
-  background-color: #ececec;
+  /* background-color: var(--c1); */
   display: flex;
   flex-direction: row;
   width:90%;
@@ -118,7 +122,7 @@ nav {
 }
 
 .info-box-text {
-  color:black;
+  color: var(--c1);
   margin: 10%;
   line-height: 30pt;
 }
@@ -126,4 +130,10 @@ nav {
 .page-header {
    margin-top: 150px;
    margin-bottom: 60px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .info-box {
+    flex-direction: column;
+  }
 }
