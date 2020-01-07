@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
 :root {
   --c1: rgba(236, 236, 255, 0.7);
   --c2: rgba(0, 37, 102, 1);
 }
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -82,12 +83,19 @@ nav {
   color: var(--c2);
   padding: 30px;
   letter-spacing: 2px;
-  transition: font-weight .1s ease-out 0s;
+  font-weight: 400;
+  transition: all .1s linear 0s;
   outline-style: none;
 }
+
+.menu-button:hover {
+  font-weight: 700;
+}
+
 #GDCButton {
   padding: 18px;
 }
+
 @media only screen and (max-width: 600px) {
   .menu-button {
     padding: 10px;
@@ -103,9 +111,7 @@ nav {
   }
 }
 
-.menu-button:hover {
-  font-weight: 700;
-}
+
 
 #intro-div {
   height: 500px;
