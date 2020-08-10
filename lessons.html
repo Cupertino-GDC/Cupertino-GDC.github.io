@@ -1,108 +1,463 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="scripts/queryfuncs.js"></script>
-  <script src="scripts/lessons.js"></script>
-  <script type="text/javascript" src="scripts/helper.js"></script>
-  <link type="text/css" rel="stylesheet" href="css/master.css">
-  <link type="text/css" rel="stylesheet" href="css/lessons.css">
-  <link rel="stylesheet" href="css/lesson-buttons.css">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 
-  <title>Cupertino GDC Lessons</title>
+	<!-- Page Preview Information -->
+	<meta name="description" content="Game Dev Club is ...">
+	<meta name="keywords" content="CGDC, GDC, Game Dev Club, Cupertino, Cupertino Game Dev Club, Cupertino Game Development Club, Hackathon, Games, Video Games, Programming, Coding, Development, Unity, C#">
+	<meta property="og:title" content="Game Dev Club">
+	<meta property="twitter:title" content="Game Dev Club">
+	<meta property="og:description" content="Game Dev Club is ...">
+	<meta property="twitter:description" content="Game Dev Club is ...">
+	<meta property="og:image" content="imgs/">
+	<meta property="twitter:image" content="imgs/">
+	<meta property="og:url" content="https://cupertino-gdc.github.io">
+	<link rel="shortcut icon" href="imgs/"/>
+
+	<!-- CSS stylesheets -->
+	<link rel="stylesheet" href="css/lessons.css">
+	<link rel="stylesheet" href="css/primary.css">
+
+	<!-- JavaScripts -->
+	<script type="text/javascript" src="js/primary.js"></script>
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<title>Lessons | GDC</title>
+
 </head>
+
+<style>
+	body {
+		font-family: 'Montserrat', sans-serif;
+	}
+</style>
+
 <body>
-  <header>
-    <!-- Nav will be pasted here via JS -->
-  </header>
 
-  <div id="main">
-    <h1 class="page-header">Pick Your Path</h1>
-    <div id="lesson-categories-container">
-      <button type="button" name="Fundamentals" class="lesson-option" onclick="goToSection('#fundamentals')">Fundamentals</button>
-      <button type="button" name="Blender" class="lesson-option" onclick="goToSection('#blender')">Blender</button>
-      <button type="button" name="ML Agents" class="lesson-option" onclick="goToSection('#mlagents')">ML Agents</button>
-      <button type="button" name="Cinemachine" class="lesson-option" onclick="goToSection('#advanced-unity')">Advanced Unity</button>
+    <div id="navbar-div">
+        <nav class="navbar navbar-expand-md bg-transparent navbar-light">
+        <a class="navbar-brand" href="#" onclick="window.open('/', '_self')">
+            <img src="imgs/GDCLogo_Web.png" alt="test" id="navbar-logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse navbar-toggleable-sm" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="navbutton" href="/lessons.html">Lessons</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navbutton" href="/opengdc.html">OpenGDC</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navbutton" href="/events.html">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navbutton" href="/team.html">Team</a>
+                </li>
+            </ul>
+        </div>
+        </nav>
     </div>
 
-    <!-- All buttons should have images inside of them by the time the page is completed. -->
+    <header id="header">
+        <br><br><br><br><br><br>
+        <h1 id="title">Lessons</h1>
+        <h1 id="subtitle">All of GDC's lessons</h1>
+    </header>
 
-    <!-- Fundamentals Category -->
+    <div id="lessons-div">
+        <br><br><br>
+        <div class="lessons-col" style="margin-right: 50px;">
+            <h1 class="lessons-col-title">Unity Fundamentals</h1>
 
-    <div id="fundamentals" class="lesson-category">
-      <h2 class="lesson-section-header">Fundamentals</h2>
-      <div class="lesson-options-container">
-        <button type="button" name="Intro to Unity" class="lesson-option" onclick="openLesson('introToUnity')">
-          Intro to Unity
-        </button>
-        <button type="button" name="  Intro to C#" class="lesson-option" onclick="openLesson('introToC')">
-          Intro to C#
-        </button>
-        <button type="button" name="APIs, GameObjects, and Monobehavior" class="lesson-option" onclick="openLesson('APIsGameObjectsMonobehavior')">
-          APIs, GameObjects, and Monobehavior
-        </button>
-        <button type="button" name="User Input" class="lesson-option" onclick="openLesson('UserInput')">
-          User Input
-        </button>
-        <button type="button" name="Vectors" class="lesson-option" onclick="openLesson('Vectors')">
-          Vectors
-        </button>
-        <button type="button" name="Unity Physics: Colliders & Rigidbodies" class="lesson-option" onclick="openLesson('Physics')">
-          Unity Physics: Colliders & Rigidbodies
-        </button>
-        <button type="button" name="UI & SceneManager" class="lesson-option" onclick="openLesson('UISceneManager')">
-          UI & SceneManager
-        </button>
+            <div class="lesson" onclick="clickLesson(this)">
+                <div class="lesson-header">
+                    <h1>Installing Unity</h1>
+                </div>
+                <div class="lesson-info">
+                    <h3><i class="icon fa fa-clock-o"></i> 40 minutes</h3>
+                    <h4 style="color: rgb(68, 86, 104);">Learn how to quickly install and setup the Unity Game Engine on your computer.</h4>
+                    <br>
+                    <a class="lesson-link" href="https://unity.com">Go to Lesson <i class="icon fa fa-chevron-right" style="font-weight: 100;"></i></a>
+                    <br><br>
+                </div>
+            </div>
 
-      </div>
+            <div class="lesson" onclick="clickLesson(this)">
+                <div class="lesson-header">
+                    <h1>Intro to Unity</h1>
+                </div>
+                <div class="lesson-info">
+                    <h3><i class="icon fa fa-clock-o"></i> 40 minutes</h3>
+                    <h4 style="color: rgb(68, 86, 104);">Learn the basics of the Unity Editor.</h4>
+                    <br>
+                    <a class="lesson-link" href="https://unity.com">Go to Lesson <i class="icon fa fa-chevron-right" style="font-weight: 100;"></i></a>
+                    <br><br>
+                </div>
+            </div>
+
+            <div class="lesson" onclick="clickLesson(this)">
+                <div class="lesson-header">
+                    <h1>Intro to C#</h1>
+                </div>
+                <div class="lesson-info">
+                    <h3><i class="icon fa fa-clock-o"></i> 40 minutes</h3>
+                    <h4 style="color: rgb(68, 86, 104);">Learn the basics of C#, an object-oriented programming language.</h4>
+                    <br>
+                    <a class="lesson-link" href="https://unity.com">Go to Lesson <i class="icon fa fa-chevron-right" style="font-weight: 100;"></i></a>
+                    <br><br>
+                </div>
+            </div>
+
+            <div class="lesson" onclick="clickLesson(this)">
+                <div class="lesson-header">
+                    <h1>APIs, GameObjects, & MonoBehavior</h1>
+                </div>
+                <div class="lesson-info">
+                    <h3><i class="icon fa fa-clock-o"></i> 40 minutes</h3>
+                    <h4 style="color: rgb(68, 86, 104);">Learn how to read Unity APIs and Manuals, how Unity GameObjects function, and about MonoBehavior.</h4>
+                    <br>
+                    <a class="lesson-link" href="https://unity.com">Go to Lesson <i class="icon fa fa-chevron-right" style="font-weight: 100;"></i></a>
+                    <br><br>
+                </div>
+            </div>
+
+            <div class="lesson" onclick="clickLesson(this)">
+                <div class="lesson-header">
+                    <h1>User Input</h1>
+                </div>
+                <div class="lesson-info">
+                    <h3><i class="icon fa fa-clock-o"></i> 40 minutes</h3>
+                    <h4 style="color: rgb(68, 86, 104);">Learn how to recognize User Input through C#.</h4>
+                    <br>
+                    <a class="lesson-link" href="https://unity.com">Go to Lesson <i class="icon fa fa-chevron-right" style="font-weight: 100;"></i></a>
+                    <br><br>
+                </div>
+            </div>
+
+            <div class="lesson" onclick="clickLesson(this)">
+                <div class="lesson-header">
+                    <h1>Vectors</h1>
+                </div>
+                <div class="lesson-info">
+                    <h3><i class="icon fa fa-clock-o"></i> 40 minutes</h3>
+                    <h4 style="color: rgb(68, 86, 104);">Learn how Vectors in Unity work and to use them effectively.</h4>
+                    <br>
+                    <a class="lesson-link" href="https://unity.com">Go to Lesson <i class="icon fa fa-chevron-right" style="font-weight: 100;"></i></a>
+                    <br><br>
+                </div>
+            </div>
+
+            <div class="lesson" onclick="clickLesson(this)">
+                <div class="lesson-header">
+                    <h1>Unity Physics: Colliders & Rigidbodies</h1>
+                </div>
+                <div class="lesson-info">
+                    <h3><i class="icon fa fa-clock-o"></i> 40 minutes</h3>
+                    <h4 style="color: rgb(68, 86, 104);">Learn how Colliders and Rigidbodies work and how to use them.</h4>
+                    <br>
+                    <a class="lesson-link" href="https://unity.com">Go to Lesson <i class="icon fa fa-chevron-right" style="font-weight: 100;"></i></a>
+                    <br><br>
+                </div>
+            </div>
+
+            <div class="lesson" onclick="clickLesson(this)">
+                <div class="lesson-header">
+                    <h1>UI & SceneManager</h1>
+                </div>
+                <div class="lesson-info">
+                    <h3><i class="icon fa fa-clock-o"></i> 40 minutes</h3>
+                    <h4 style="color: rgb(68, 86, 104);">Learn how to create a UI (user interface) in games and switch scene views.</h4>
+                    <br>
+                    <a class="lesson-link" href="https://unity.com">Go to Lesson <i class="icon fa fa-chevron-right" style="font-weight: 100;"></i></a>
+                    <br><br>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="lessons-col">
+            <h1 class="lessons-col-title">Advanced Unity</h1>
+
+            <div class="lesson" onclick="clickLesson(this)">
+                <div class="lesson-header">
+                    <h1>Animations</h1>
+                </div>
+                <div class="lesson-info">
+                    <h3><i class="icon fa fa-clock-o"></i> 40 minutes</h3>
+                    <h4 style="color: rgb(68, 86, 104);">Learn how to quickly install and setup the Unity Game Engine on your computer.</h4>
+                    <br>
+                    <a class="lesson-link" href="https://unity.com">Go to Lesson <i class="icon fa fa-chevron-right" style="font-weight: 100;"></i></a>
+                    <br><br>
+                </div>
+            </div>
+
+            <div class="lesson" onclick="clickLesson(this)">
+                <div class="lesson-header">
+                    <h1>2D Lighting</h1>
+                </div>
+                <div class="lesson-info">
+                    <h3><i class="icon fa fa-clock-o"></i> 40 minutes</h3>
+                    <h4 style="color: rgb(68, 86, 104);">Learn how to quickly install and setup the Unity Game Engine on your computer.</h4>
+                    <br>
+                    <a class="lesson-link" href="https://unity.com">Go to Lesson <i class="icon fa fa-chevron-right" style="font-weight: 100;"></i></a>
+                    <br><br>
+                </div>
+            </div>
+
+            <div class="lesson" onclick="clickLesson(this)">
+                <div class="lesson-header">
+                    <h1>3D Lighting</h1>
+                </div>
+                <div class="lesson-info">
+                    <h3><i class="icon fa fa-clock-o"></i> 40 minutes</h3>
+                    <h4 style="color: rgb(68, 86, 104);">Learn how to quickly install and setup the Unity Game Engine on your computer.</h4>
+                    <br>
+                    <a class="lesson-link" href="https://unity.com">Go to Lesson <i class="icon fa fa-chevron-right" style="font-weight: 100;"></i></a>
+                    <br><br>
+                </div>
+            </div>
+
+            <div class="lesson" onclick="clickLesson(this)">
+                <div class="lesson-header">
+                    <h1>Cinemachine</h1>
+                </div>
+                <div class="lesson-info">
+                    <h3><i class="icon fa fa-clock-o"></i> 40 minutes</h3>
+                    <h4 style="color: rgb(68, 86, 104);">Learn how to quickly install and setup the Unity Game Engine on your computer.</h4>
+                    <br>
+                    <a class="lesson-link" href="https://unity.com">Go to Lesson <i class="icon fa fa-chevron-right" style="font-weight: 100;"></i></a>
+                    <br><br>
+                </div>
+            </div>
+
+            <div class="lesson" onclick="clickLesson(this)">
+                <div class="lesson-header">
+                    <h1>Singletons & Game Managers</h1>
+                </div>
+                <div class="lesson-info">
+                    <h3><i class="icon fa fa-clock-o"></i> 40 minutes</h3>
+                    <h4 style="color: rgb(68, 86, 104);">Learn how to quickly install and setup the Unity Game Engine on your computer.</h4>
+                    <br>
+                    <a class="lesson-link" href="https://unity.com">Go to Lesson <i class="icon fa fa-chevron-right" style="font-weight: 100;"></i></a>
+                    <br><br>
+                </div>
+            </div>
+
+            <div class="lesson" onclick="clickLesson(this)">
+                <div class="lesson-header">
+                    <h1>Tilemaps</h1>
+                </div>
+                <div class="lesson-info">
+                    <h3><i class="icon fa fa-clock-o"></i> 40 minutes</h3>
+                    <h4 style="color: rgb(68, 86, 104);">Learn how to quickly install and setup the Unity Game Engine on your computer.</h4>
+                    <br>
+                    <a class="lesson-link" href="https://unity.com">Go to Lesson <i class="icon fa fa-chevron-right" style="font-weight: 100;"></i></a>
+                    <br><br>
+                </div>
+            </div>
+
+            <div class="lesson" onclick="clickLesson(this)">
+                <div class="lesson-header">
+                    <h1>3D Levels in ProBuilder</h1>
+                </div>
+                <div class="lesson-info">
+                    <h3><i class="icon fa fa-clock-o"></i> 40 minutes</h3>
+                    <h4 style="color: rgb(68, 86, 104);">Learn how to quickly install and setup the Unity Game Engine on your computer.</h4>
+                    <br>
+                    <a class="lesson-link" href="https://unity.com">Go to Lesson <i class="icon fa fa-chevron-right" style="font-weight: 100;"></i></a>
+                    <br><br>
+                </div>
+            </div>
+
+        </div>
+
+        <br><br><br>
+
+        <div class="lessons-col" style="margin-right: 50px;">
+            <h1 class="lessons-col-title">Unity ML</h1>
+
+            <div class="lesson" onclick="clickLesson(this)">
+                <div class="lesson-header">
+                    <h1>Intro to Unity ML Agents</h1>
+                </div>
+                <div class="lesson-info">
+                    <h3><i class="icon fa fa-clock-o"></i> 40 minutes</h3>
+                    <h4 style="color: rgb(68, 86, 104);">Learn how to quickly install and setup the Unity Game Engine on your computer.</h4>
+                    <br>
+                    <a class="lesson-link" href="https://unity.com">Go to Lesson <i class="icon fa fa-chevron-right" style="font-weight: 100;"></i></a>
+                    <br><br>
+                </div>
+            </div>
+
+            <div class="lesson" onclick="clickLesson(this)">
+                <div class="lesson-header">
+                    <h1>What is Unity ML Agents?</h1>
+                </div>
+                <div class="lesson-info">
+                    <h3><i class="icon fa fa-clock-o"></i> 40 minutes</h3>
+                    <h4 style="color: rgb(68, 86, 104);">Learn how to quickly install and setup the Unity Game Engine on your computer.</h4>
+                    <br>
+                    <a class="lesson-link" href="https://unity.com">Go to Lesson <i class="icon fa fa-chevron-right" style="font-weight: 100;"></i></a>
+                    <br><br>
+                </div>
+            </div>
+
+            <div class="lesson" onclick="clickLesson(this)">
+                <div class="lesson-header">
+                    <h1>Installing ML Agents</h1>
+                </div>
+                <div class="lesson-info">
+                    <h3><i class="icon fa fa-clock-o"></i> 40 minutes</h3>
+                    <h4 style="color: rgb(68, 86, 104);">Learn how to quickly install and setup the Unity Game Engine on your computer.</h4>
+                    <br>
+                    <a class="lesson-link" href="https://unity.com">Go to Lesson <i class="icon fa fa-chevron-right" style="font-weight: 100;"></i></a>
+                    <br><br>
+                </div>
+            </div>
+            
+            <div class="lesson" onclick="clickLesson(this)">
+                <div class="lesson-header">
+                    <h1>Creating a ML Agents Project</h1>
+                </div>
+                <div class="lesson-info">
+                    <h3><i class="icon fa fa-clock-o"></i> 40 minutes</h3>
+                    <h4 style="color: rgb(68, 86, 104);">Learn how to quickly install and setup the Unity Game Engine on your computer.</h4>
+                    <br>
+                    <a class="lesson-link" href="https://unity.com">Go to Lesson <i class="icon fa fa-chevron-right" style="font-weight: 100;"></i></a>
+                    <br><br>
+                </div>
+            </div>
+
+            <div class="lesson" onclick="clickLesson(this)">
+                <div class="lesson-header">
+                    <h1>Training with Google Colab</h1>
+                </div>
+                <div class="lesson-info">
+                    <h3><i class="icon fa fa-clock-o"></i> 40 minutes</h3>
+                    <h4 style="color: rgb(68, 86, 104);">Learn how to quickly install and setup the Unity Game Engine on your computer.</h4>
+                    <br>
+                    <a class="lesson-link" href="https://unity.com">Go to Lesson <i class="icon fa fa-chevron-right" style="font-weight: 100;"></i></a>
+                    <br><br>
+                </div>
+            </div>
+
+            <div class="lesson" onclick="clickLesson(this)">
+                <div class="lesson-header">
+                    <h1>Model Building</h1>
+                </div>
+                <div class="lesson-info">
+                    <h3><i class="icon fa fa-clock-o"></i> 40 minutes</h3>
+                    <h4 style="color: rgb(68, 86, 104);">Learn how to quickly install and setup the Unity Game Engine on your computer.</h4>
+                    <br>
+                    <a class="lesson-link" href="https://unity.com">Go to Lesson <i class="icon fa fa-chevron-right" style="font-weight: 100;"></i></a>
+                    <br><br>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="lessons-col">
+            <h1 class="lessons-col-title">Blender Modeling</h1>
+
+            <div class="lesson" onclick="clickLesson(this)">
+                <div class="lesson-header">
+                    <h1>Sculpting</h1>
+                </div>
+                <div class="lesson-info">
+                    <h3><i class="icon fa fa-clock-o"></i> 40 minutes</h3>
+                    <h4 style="color: rgb(68, 86, 104);">Learn how to quickly install and setup the Unity Game Engine on your computer.</h4>
+                    <br>
+                    <a class="lesson-link" href="https://unity.com">Go to Lesson <i class="icon fa fa-chevron-right" style="font-weight: 100;"></i></a>
+                    <br><br>
+                </div>
+            </div>
+
+            <div class="lesson" onclick="clickLesson(this)">
+                <div class="lesson-header">
+                    <h1>Painting</h1>
+                </div>
+                <div class="lesson-info">
+                    <h3><i class="icon fa fa-clock-o"></i> 40 minutes</h3>
+                    <h4 style="color: rgb(68, 86, 104);">Learn how to quickly install and setup the Unity Game Engine on your computer.</h4>
+                    <br>
+                    <a class="lesson-link" href="https://unity.com">Go to Lesson <i class="icon fa fa-chevron-right" style="font-weight: 100;"></i></a>
+                    <br><br>
+                </div>
+            </div>
+
+            <div class="lesson" onclick="clickLesson(this)">
+                <div class="lesson-header">
+                    <h1>Animating</h1>
+                </div>
+                <div class="lesson-info">
+                    <h3><i class="icon fa fa-clock-o"></i> 40 minutes</h3>
+                    <h4 style="color: rgb(68, 86, 104);">Learn how to quickly install and setup the Unity Game Engine on your computer.</h4>
+                    <br>
+                    <a class="lesson-link" href="https://unity.com">Go to Lesson <i class="icon fa fa-chevron-right" style="font-weight: 100;"></i></a>
+                    <br><br>
+                </div>
+            </div>
+
+        </div>
+
+        <br><br><br><br>
     </div>
 
-    <!-- Blender Category -->
-    <div id="blender" class="lesson-category">
-      <h2 class="lesson-section-header">Blender</h2>
-      <div class="lesson-options-container">
-        <button type="button" name="Sculpting" class="lesson-option" onclick="openLesson('sculpting')">
-          Sculpting
-        </button>
-        <button type="button" name="Painting" class="lesson-option" onclick="openLesson('painting')">
-          Painting
-        </button>
-        <button type="button" name="Animating" class="lesson-option" onclick="openLesson('animating')">
-          Animating
-        </button>
-      </div>
-    </div>
+	<footer id="footer">
+		<div id="footer-left">
+			<h1 style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 64px;">Game Dev Club</h1>
+			<h1>Room 723, Mr. McLeod</h1>
+			<br><br>
+			<h2>Cupertino High School</h2>
+			<h3 style="font-weight: 300;">10100 Finch Avenue,<br>Cupertino, CA 95014</h3>
+			<br>
+		</div>
+		<div id="footer-middle">
+			<h4 style="font-weight: 700;">Pages:</h4>
+			<br>
+			<a href="/" class="footer-link">Home</a><br><br>
+			<a href="/lessons.html" class="footer-link">Lessons</a><br><br>
+			<a href="/opengdc.html" class="footer-link">OpenGDC</a><br><br>
+			<a href="/events.html" class="footer-link">Events</a><br><br>
+			<a href="/team.html" class="footer-link">Team</a><br><br>
+		</div>
+		<div id="footer-right">
+			<h1>Contact Us!</h1>
+			<br>
+			<a href="mailto:cupertinogamedev@gmail.com" class="email-button">
+				<i class="fa fa-envelope" aria-hidden="true"></i>
+				Email Us!
+			</a>
+			<a href="https://www.instagram.com/cupertinogamedevclub/" target="_blank" class="instagram-button">
+				<i class="fa fa-instagram" aria-hidden="true"></i>
+				Instagram
+			</a>
+			<a href="https://www.facebook.com/Cupertino-Game-Development-Club-515386358867050" target="_blank" class="facebook-button">
+				<i class="fa fa-facebook" aria-hidden="true"></i> Facebook
+			</a>
+		</div>
+	</footer>
 
-    <!-- ML Agents Category -->
-    <div id="mlagents" class="lesson-category">
-      <h2 class="lesson-section-header">ML Agents</h2>
-      <div class="lesson-options-container">
-        <button type="button" name="Intro to Unity" class="lesson-option" onclick="openLesson('introToUnity')">
-          Lesson
-        </button>
-        <button type="button" name="Intro to Unity" class="lesson-option" onclick="openLesson('introToUnity')">
-          Lesson
-        </button>
-      </div>
-    </div>
-
-    <div id="advanced-unity" class="lesson-category">
-      <h2 class="lesson-section-header">Advanced Unity</h2>
-      <div class="lesson-options-container">
-        <button type="button" name="Animator" class="lesson-option" onclick="openLesson('Animator')">
-          Animator
-        </button>
-        <button type="button" name="Lights n' Effects" class="lesson-option" onclick="openLesson('LightsnEffects')">
-          Lights n' Effects
-        </button>
-        <button type="button" name="Cinemachine" class="lesson-option" onclick="openLesson('cinemachine')">
-          Cinemachine
-        </button>
-      </div>
-    </div>
-  </div>
 </body>
+
 </html>

@@ -1,0 +1,68 @@
+#team-div {
+    background-color: rgb(242, 242, 242);
+    height: auto;
+    text-align: center;
+}
+
+.officer-div {
+    border-radius: 10px;
+    color: white;
+    width: 30%;
+    height: auto;
+    display: inline-block;
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: auto;
+    margin-right: 2%;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    transition: all 0.2s;
+}
+
+.officer-div:hover {
+    transform: scale(1.025);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.officer-header {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: #003ba2;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px 20px;
+}
+
+.officer-img {
+    width: 50%;
+    border-radius: 200px;
+    transition: all 0.2s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.officer-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.officer-info {
+    text-align: center;
+    padding: 20px 30px;
+    color: rgb(10, 37, 64);
+    background-color: rgb(255, 255, 255);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+/* #founding-div {
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    margin: auto;
+    border-radius: 5px;
+    padding: 50px;
+    text-align: center;
+    box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.1);
+}
+
+#founding-img {
+    width: 80%;
+    border-radius: 10px;
+} */

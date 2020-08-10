@@ -1,0 +1,57 @@
+#events-div {
+    background-color: rgb(242, 242, 242);
+    height: auto;
+    text-align: center;
+}
+
+.event {
+    padding: 20px 30px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+    color: rgb(10, 37, 64);
+    box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 10px;
+}
+
+.left {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+.right {
+    width: 55%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.event-image {
+    width: 75%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    transition: all 0.2s;
+}
+
+.event-image:hover {
+    transform: scale(1.025);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.event-link {
+    font-size: 28px;
+    font-weight: 500;
+    color: rgb(97, 126, 190);
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-family: 'Noto Sans JP', sans-serif;
+    transition: all 0.2s;
+}
+
+.event-link:hover {
+    background-color: rgb(97, 126, 190);
+    color: white;
+    text-decoration: none;
+}
