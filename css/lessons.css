@@ -9,11 +9,16 @@
     width: 45%;
     display: inline-block;
     margin: auto;
+    margin-right: 50px;
     vertical-align: top;
     background-color: white;
     border-radius: 10px;
     padding-top: 40px;
     padding-bottom: 60px;
+}
+
+.right {
+    margin-right: auto;
 }
 
 .lessons-col-title {
@@ -55,6 +60,10 @@
     border-bottom-left-radius: 10px;
 }
 
+.lesson-desc {
+    color: rgb(68, 86, 104);
+}
+
 .lesson-link {
     font-size: 28px;
     font-weight: 500;
@@ -68,4 +77,45 @@
     background-color: rgb(97, 126, 190);
     color: white;
     text-decoration: none;
+}
+
+@media screen and (max-width: 900px) {
+    .lessons-col {
+        width: 90%;
+        margin-right: 0px;
+    }
+
+    .right {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .lessons-col-title {
+        font-size: 10.5vw;
+    }
+
+    .lesson-header-text {
+        font-size: 28px;
+    }
+
+    .lesson-link {
+        font-size: 22px;
+        padding: 5px 10px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .lesson-time {
+        font-size: 8vw;
+        margin-bottom: 10px;
+    }
+
+    .lesson-desc {
+        font-size: 8vw;
+    }
+
+    .lesson-link {
+        font-size: 6vw;
+    }
 }

@@ -283,3 +283,101 @@
     font-size: 28px;
     font-style: italic;
 }
+
+@media screen and (max-width: 1150px) {
+    #footer-left {
+        width: 75%;
+    }
+
+    #footer-middle {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    #footer {
+        height: 400px;
+    }
+
+    .email-button {
+        width: 200px;
+    }
+
+    .instagram-button {
+        width: 200px;
+    }
+
+    .facebook-button {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 775px) {
+    #footer {
+        text-align: center;
+        height: 700px;
+    }
+
+    #footer-left {
+        width: 100%;
+    }
+
+    #footer-right {
+        width: 100%;
+    }
+
+    .email-button {
+        width: 60%;
+    }
+
+    .instagram-button {
+        width: 60%;
+    }
+
+    .facebook-button {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    #footer {
+        height: 815px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #footer {
+        height: 910px;
+    }
+
+    .email-button {
+        width: 80%;
+    }
+
+    .instagram-button {
+        width: 80%;
+    }
+
+    .facebook-button {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 525px) {
+    #title {
+        font-size: 18vw;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    #subtitle {
+        font-size: 6.67vw;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #footer {
+        height: 1000px;
+    }
+}

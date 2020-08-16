@@ -7,7 +7,6 @@
 .officer-div {
     border-radius: 10px;
     color: white;
-    width: 30%;
     height: auto;
     display: inline-block;
     font-family: 'Noto Sans JP', sans-serif;
@@ -21,6 +20,14 @@
 .officer-div:hover {
     transform: scale(1.025);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.top {
+    width: 40%;
+}
+
+.bottom {
+    width: 30%;
 }
 
 .officer-header {
@@ -52,17 +59,56 @@
     border-bottom-left-radius: 10px;
 }
 
-/* #founding-div {
-    background-color: rgb(255, 255, 255);
-    width: 80%;
-    margin: auto;
-    border-radius: 5px;
-    padding: 50px;
-    text-align: center;
-    box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.1);
+.placeholder {
+    visibility: hidden;
 }
 
-#founding-img {
-    width: 80%;
-    border-radius: 10px;
-} */
+.nishant {
+    display: none;
+}
+
+@media screen and (min-width: 1963px) {
+
+    .nishant {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1590px) {
+    .lower {
+        height: 425px;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+
+    .officer-div {
+        margin-right: auto;
+    }
+
+    .top {
+        width: 80%;
+    }
+
+    .bottom {
+        width: 80%;
+    }
+
+    .lower {
+        height: auto;
+    }
+
+    .officer-img {
+        width: 40%;
+    }
+
+    .placeholder {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .officer-img {
+        width: 80%;
+    }
+}
