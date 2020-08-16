@@ -34,6 +34,13 @@
     height: 75px;
 }
 
+/* change hamburger button border color */
+button.navbar-toggler.navbar-toggler-right {
+    border-color: white;
+    color: white;
+    background-color: white;
+}
+
 #navbar-logo {
     filter: brightness(0) invert(1);
     width: 117.75px;
@@ -294,6 +301,19 @@
     }
 }
 
+@media screen and (max-width: 1000px) {
+
+    #navbar-logo {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .navbutton {
+        margin-right: 16px;
+    }
+
+}
+
 @media screen and (max-width: 950px) {
     #footer {
         height: 400px;
@@ -336,6 +356,18 @@
 
     .facebook-button {
         width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #navbar-logo {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .navbutton {
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 

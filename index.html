@@ -49,7 +49,7 @@
 	}
 </style>
 
-<body onload="checkMobile()">
+<body onload="checkMobile()" onresize="removeHeaderBreaks()">
 
 	<div id="header-div">
 		<!-- <video autoplay muted loop id="title-video" oncanplay="this.playbackRate = 0.75">
@@ -65,7 +65,7 @@
 			<a class="navbar-brand" href="#" onclick="scrollToTop()">
 				<img src="imgs/GDCLogo_Web.png" alt="test" id="navbar-logo">
 			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" onclick="stretchNavbar()">
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" onclick="stretchNavbar()">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse navbar-toggleable-sm" id="collapsibleNavbar">
@@ -87,17 +87,17 @@
 			</nav>
 		</div>
 		<div id='title-div'>
-			<div style="width: 55%; float: left; margin-left: 5%; margin-top: 7.5%; background-color: rgba(0, 0, 0, 0.5); height: 450px;">
+			<div id="left-header">
 				<br><br><br>
 				<img id="title-image" src="/imgs/GDCLogo_IconTransparent.png" onclick="scrollToTop()">
 				<br><br><br>
 			</div>
-			<div style="width: 35%; float: left; margin-top: 7.5%; background-color: rgba(0, 0, 0, 0.5); height: 450px;">
+			<div id="right-header">
 				<br><br>
-				<h1 id="title">Learn.<br>Make.<br>Share.</h1>
+				<h1 id="title">Learn. <br>Make. <br>Share. </h1>
 				<br>
 			</div>
-			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 			<a class="register-button" href="https://forms.google.com">Register for OpenGDC</a>
 			
 		</div>
@@ -107,9 +107,9 @@
 
 	<div id="about-div">
 		<br>
-		<h1 style="font-size: 72px; font-weight: 700; text-align: center; color: rgb(43, 69, 126);">Cupertino<br>Game Dev Club</h1>
+		<h1 id="about-title">Cupertino<br>Game Dev Club</h1>
 		<br>
-		<div class="about-card">
+		<div class="about-card" id="learn-card">
 			<div class="left-div">
 				<h1 style="font-weight: 700; font-size: 78px; color: rgb(97, 126, 190);">Learn</h1>
 				<p style="font-family: 'Noto Sans JP', sans-serif; width: 100%; font-size: 28px;">
@@ -119,7 +119,7 @@
 				</p>
 				<br>
 				<div style="text-align: center;">
-					<a href="/lessons" class="lessons-button">Lessons</a>
+					<a href="/lessons.html" class="lessons-button">Lessons</a>
 				</div>
 			</div>
 			<div class="right-div">
@@ -128,12 +128,12 @@
 			</div>
 		</div>
 
-		<div class="about-card" style="text-align: right;">
-			<div class="right-div" style="text-align: center; padding-left: 0px;">
+		<div class="about-card" id="make-card">
+			<div class="right-div" id="make-left">
 				<br>
 				<img class="about-image" src="/imgs/Gaming.JPG">
 			</div>
-			<div class="left-div">
+			<div class="left-div" id="make-right">
 				<h1 style="font-weight: 700; font-size: 78px; color: rgb(97, 126, 190);">Make</h1>
 				<p style="font-family: 'Noto Sans JP', sans-serif; width: 100%; font-size: 32px;">
 					At our Friday afterschool sessions, members are challenged to implement a small game mechanic
@@ -143,7 +143,7 @@
 			</div>
 		</div>
 
-		<div class="about-card">
+		<div class="about-card" id="share-card">
 			<div class="left-div">
 				<h1 style="font-weight: 700; font-size: 78px; color: rgb(97, 126, 190);">Share</h1>
 				<p style="font-family: 'Noto Sans JP', sans-serif; width: 100%; font-size: 32px;">
