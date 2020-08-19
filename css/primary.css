@@ -150,8 +150,8 @@ button.navbar-toggler.navbar-toggler-right {
     transition-property: transform;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
+    -webkit-transition-timing-function: cubic-bezier(.5,0,.9,.5);
+    transition-timing-function: cubic-bezier(.5,0,.9,.5);
 }
 .email-button:hover, .email-button:focus, .email-button:active {
     color: white;
@@ -203,8 +203,8 @@ button.navbar-toggler.navbar-toggler-right {
     transition-property: transform;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
+    -webkit-transition-timing-function: cubic-bezier(.5,0,.9,.5);
+    transition-timing-function: cubic-bezier(.5,0,.9,.5);
 }
 .instagram-button:hover, .instagram-button:focus, .instagram-button:active {
     color: white;
@@ -255,8 +255,8 @@ button.navbar-toggler.navbar-toggler-right {
     transition-property: transform;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
+    -webkit-transition-timing-function: cubic-bezier(.5,0,.9,.5);
+    transition-timing-function: cubic-bezier(.5,0,.9,.5);
 }
 .facebook-button:hover, .facebook-button:focus, .facebook-button:active {
     color: white;
