@@ -291,6 +291,22 @@ button.navbar-toggler.navbar-toggler-right {
     font-style: italic;
 }
 
+@media screen and (min-width: 1850px) {
+
+    .email-button {
+        width: 12.5vw;
+    }
+
+    .instagram-button {
+        width: 12.5vw;
+    }
+
+    .facebook-button {
+        width: 12.5vw;
+    }
+
+}
+
 @media screen and (max-width: 1150px) {
     #footer-left {
         width: 75%;

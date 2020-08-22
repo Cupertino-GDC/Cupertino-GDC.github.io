@@ -53,11 +53,11 @@ function removeHeaderBreaks() {
         }
     }
 
-    if(window.innerWidth <= 500) {
-        document.getElementsByClassName("register-button")[0].innerHTML = "Register";
-    } else {
-        document.getElementsByClassName("register-button")[0].innerHTML = "Register for OpenGDC";
-    }
+    // if(window.innerWidth <= 500) {
+    //     document.getElementsByClassName("register-button")[0].innerHTML = "Register";
+    // } else {
+    //     document.getElementsByClassName("register-button")[0].innerHTML = "Register for OpenGDC";
+    // }
 }
 
 function clickLesson(lesson) {
