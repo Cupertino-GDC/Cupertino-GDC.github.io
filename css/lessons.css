@@ -64,6 +64,11 @@
     color: rgb(68, 86, 104);
 }
 
+.lesson-subtitle {
+    color: rgb(68, 86, 104);
+    font-weight: 600;
+}
+
 .lesson-link {
     font-size: 28px;
     font-weight: 500;
