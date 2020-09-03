@@ -48,6 +48,11 @@
     margin-top: 60px;
 }
 
+.event-title {
+    font-weight: 600;
+    font-size: 56px;
+}
+
 .event-link {
     font-size: 28px;
     font-weight: 500;
@@ -163,5 +168,15 @@
 
     .right {
         width: 90%;
+    }
+
+    .event {
+        padding: 10px 15px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .event-title {
+        font-size: 12.5vw;
     }
 }
