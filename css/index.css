@@ -223,6 +223,13 @@
     transform: scaleX(1);
 }
 
+@media screen and (min-width: 1636px) {
+    #right-header {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+}
+
 @media screen and (max-width: 1425px) {
 
     #learn-card {
