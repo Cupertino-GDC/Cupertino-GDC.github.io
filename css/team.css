@@ -7,6 +7,7 @@
 .officer-div {
     border-radius: 10px;
     color: white;
+    width: 35%;
     height: auto;
     display: inline-block;
     font-family: 'Noto Sans JP', sans-serif;
@@ -20,14 +21,6 @@
 .officer-div:hover {
     transform: scale(1.025);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.top {
-    width: 40%;
-}
-
-.bottom {
-    width: 30%;
 }
 
 .officer-header {
@@ -50,6 +43,11 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
+.officer-name {
+    font-weight: 700; 
+    font-size: 42px;
+}
+
 .officer-info {
     text-align: center;
     padding: 20px 30px;
@@ -63,17 +61,6 @@
     visibility: hidden;
 }
 
-.nishant {
-    display: none;
-}
-
-@media screen and (min-width: 1963px) {
-
-    .nishant {
-        display: block;
-    }
-}
-
 @media screen and (max-width: 1590px) {
     .lower {
         height: 425px;
@@ -84,14 +71,6 @@
 
     .officer-div {
         margin-right: auto;
-    }
-
-    .top {
-        width: 80%;
-    }
-
-    .bottom {
-        width: 80%;
     }
 
     .lower {
@@ -107,7 +86,31 @@
     }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1320px) {
+    .officer-div {
+        width: 50%;
+    }
+
+    .officer-img {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .officer-div {
+        width: 70%;
+    }
+
+    .officer-img {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .officer-div {
+        width: 80%;
+    }
+
     .officer-img {
         width: 80%;
     }
