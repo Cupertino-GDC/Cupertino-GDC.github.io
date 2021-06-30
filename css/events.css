@@ -26,6 +26,7 @@
     width: 55%;
     display: inline-block;
     vertical-align: top;
+    padding-top: 20px;
 }
 
 .event-image {
@@ -38,6 +39,16 @@
 .event-image:hover {
     transform: scale(1.025);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.finalmeeting {
+    margin-top: 8vw;
+    width: 25vw;
+}
+
+.slide {
+    margin-top: 5vw;
+    width: 25vw;
 }
 
 .melonjam {
@@ -98,6 +109,10 @@
 }
 
 @media screen and (max-width: 1453px) {
+    .finalmeeting {
+        margin-top: 10vw;
+    }
+
     .pd19 {
         margin-top: 30px;
     }
@@ -116,6 +131,10 @@
 }
 
 @media screen and (max-width: 1145px) {
+    .finalmeeting {
+        margin-top: 12vw;
+    }
+
     .melonjam {
         margin-top: 11vw;
     }
@@ -126,6 +145,10 @@
 }
 
 @media screen and (max-width: 1045px) {
+    .finalmeeting {
+        margin-top: 18vw;
+    }
+
     .aicamp {
         margin-top: 3vw;
     }
