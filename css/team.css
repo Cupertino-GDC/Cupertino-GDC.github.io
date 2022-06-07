@@ -1,19 +1,19 @@
 #team-div {
-    background-color: rgb(242, 242, 242);
+    background-color: rgb(255, 255, 255);
     height: auto;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
 }
 
 .officer-div {
     border-radius: 10px;
     color: white;
     width: 35%;
-    height: auto;
-    display: inline-block;
+    margin: 3%;
     font-family: 'Noto Sans JP', sans-serif;
-    margin: auto;
-    margin-right: 2%;
-    margin-top: 30px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
     transition: all 0.2s;
 }
@@ -28,11 +28,12 @@
     border-top-left-radius: 10px;
     background-color: #003ba2;
     font-family: 'Montserrat', sans-serif;
-    padding: 20px 20px;
+    padding: 2vw;
+    height: 27vw;
 }
 
 .officer-img {
-    width: 50%;
+    width: 17vw;
     border-radius: 200px;
     transition: all 0.2s;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
@@ -45,73 +46,94 @@
 
 .officer-name {
     font-weight: 700; 
-    font-size: 42px;
+    font-size: 2.5vw;
 }
 
 .officer-info {
     text-align: center;
     padding: 20px 30px;
     color: rgb(10, 37, 64);
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 
-.placeholder {
-    visibility: hidden;
+.officer-info > h1 {
+    font-size: 2vw;
 }
 
-@media screen and (max-width: 1590px) {
-    .lower {
-        height: 425px;
-    }
+#hof-div {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#hof-div > h1 {
+    font-size: 5vw;
+    font-weight: 600;
+}
+
+#hof-container {
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.famer {
+    background-color: rgb(255, 255, 255);
+    padding: 2vw;
+    width: 30%;
+}
+
+.hof-img {
+    width: 17vw;
+    border-radius: 20vw;
+    transition: all 0.2s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.hof-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.famer > h2 {
+    margin-top: 2vw;
+    font-size: 2.5vw;
+    font-weight: 600;
+    color: rgb(0, 59, 162);
+}
+
+.famer > h3 {
+    font-size: 2vw;
+    font-weight: 500;
 }
 
 @media screen and (max-width: 1240px) {
-
-    .officer-div {
-        margin-right: auto;
-    }
-
-    .lower {
-        height: auto;
-    }
-
-    .officer-img {
-        width: 40%;
-    }
-
-    .placeholder {
-        display: none;
+    .officer-header {
+        height: 28vw;
     }
 }
 
-@media screen and (max-width: 1320px) {
-    .officer-div {
-        width: 50%;
+@media screen and (max-width: 1000px) {
+    .officer-header {
+        height: 30vw;
     }
 
     .officer-img {
-        width: 70%;
+        width: 20vw;
     }
 }
 
-@media screen and (max-width: 750px) {
-    .officer-div {
-        width: 70%;
+@media screen and (max-width: 700px) {
+    .officer-header {
+        height: 34vw;
     }
 
-    .officer-img {
-        width: 70%;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .officer-div {
-        width: 80%;
-    }
-
-    .officer-img {
-        width: 80%;
+    .officer-info {
+        padding: 2vw 30px;
     }
 }
