@@ -11,16 +11,45 @@
 .officer-div {
     border-radius: 10px;
     color: white;
-    width: 35%;
+    width: clamp(300px, 35%, 10000px);
     margin: 3%;
     font-family: 'Noto Sans JP', sans-serif;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
-    transition: all 0.2s;
+    transition: all 0.4s;
+}
+
+.officer-text {
+    font-weight: 600;
+    font-size: 1vw;
+    display: block;
+    text-align: left;
+    white-space: nowrap;
+    padding: 20px;
+    padding-top: 4vw;
 }
 
 .officer-div:hover {
     transform: scale(1.025);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.officer-desc {
+    overflow: hidden;
+    width: 0%;
+    -webkit-transition: width 0.3s ease-in-out;
+    -moz-transition: width 0.3s ease-in-out;
+    -o-transition: width 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out;
+}
+
+.officer-div:hover .officer-header .officer-desc {
+    width: 40%;
+}
+
+.officer-flex {
+    display: flex;
+    justify-content: center;
+    transition: all 2s ease-in-out;
 }
 
 .officer-header {
@@ -45,7 +74,7 @@
 }
 
 .officer-name {
-    font-weight: 700; 
+    font-weight: 700;
     font-size: 2.5vw;
 }
 
@@ -58,7 +87,7 @@
     border-bottom-left-radius: 10px;
 }
 
-.officer-info > h1 {
+.officer-info>h1 {
     font-size: 2vw;
 }
 
@@ -70,7 +99,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-#hof-div > h1 {
+#hof-div>h1 {
     font-size: 5vw;
     font-weight: 600;
 }
@@ -100,14 +129,14 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
-.famer > h2 {
+.famer>h2 {
     margin-top: 2vw;
     font-size: 2.5vw;
     font-weight: 600;
     color: rgb(0, 59, 162);
 }
 
-.famer > h3 {
+.famer>h3 {
     font-size: 2vw;
     font-weight: 500;
 }
@@ -135,5 +164,9 @@
 
     .officer-info {
         padding: 2vw 30px;
+    }
+
+    .officer-text {
+        font-size: 1.6vw;
     }
 }
