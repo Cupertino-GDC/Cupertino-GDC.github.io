@@ -17,6 +17,14 @@
     padding-bottom: 60px;
 }
 
+.lessons-col.unity {
+    background-color: darkgray;
+}
+
+.lessons-col.godot {
+    background-color: #478cbf;
+}
+
 .right {
     margin-right: auto;
 }
