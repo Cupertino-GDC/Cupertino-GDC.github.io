@@ -141,6 +141,48 @@
     font-weight: 500;
 }
 
+
+.image-slider-container {
+    height: 17vw;
+    width: 17vw;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0 auto;
+}
+
+.image-slider-image {
+    box-sizing: border-box;
+    position: absolute;
+    height: 17vw;
+    width: 17vw;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.image-slider-image img {
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto;
+}
+
+.image-slider-image h2 {
+    overflow: hidden;
+    text-wrap: nowrap;
+}
+
+.image-slider {
+    box-sizing: border-box;
+    position: absolute;
+    background-color: #2196F3;
+    z-index: 9;
+    cursor: ew-resize;
+    width: 40px;
+    height: 40px;
+    opacity: 0.7;
+    border-radius: 50%;
+}
+
+
 @media screen and (max-width: 1240px) {
     .officer-header {
         height: 28vw;
