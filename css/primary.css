@@ -216,7 +216,7 @@ button.navbar-toggler.navbar-toggler-right {
     transform: scaleX(1);
 }
 
-.facebook-button {
+.discord-button {
     display: inline-block;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
@@ -238,7 +238,7 @@ button.navbar-toggler.navbar-toggler-right {
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
 }
-.facebook-button:before {
+.discord-button:before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -258,12 +258,12 @@ button.navbar-toggler.navbar-toggler-right {
     -webkit-transition-timing-function: cubic-bezier(.5,0,.9,.5);
     transition-timing-function: cubic-bezier(.5,0,.9,.5);
 }
-.facebook-button:hover, .facebook-button:focus, .facebook-button:active {
+.discord-button:hover, .discord-button:focus, .discord-button:active {
     color: white;
     border-color: rgb(25, 119, 243);
     text-decoration: none;
 }
-.facebook-button:hover:before, .facebook-button:focus:before, .facebook-button:active:before {
+.discord-button:hover:before, .discord-button:focus:before, .discord-button:active:before {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
@@ -301,7 +301,7 @@ button.navbar-toggler.navbar-toggler-right {
         width: 12.5vw;
     }
 
-    .facebook-button {
+    .discord-button {
         width: 12.5vw;
     }
 
@@ -343,7 +343,7 @@ button.navbar-toggler.navbar-toggler-right {
         width: 200px;
     }
 
-    .facebook-button {
+    .discord-button {
         width: 200px;
     }
 }
@@ -370,7 +370,7 @@ button.navbar-toggler.navbar-toggler-right {
         width: 60%;
     }
 
-    .facebook-button {
+    .discord-button {
         width: 60%;
     }
 }
@@ -406,7 +406,7 @@ button.navbar-toggler.navbar-toggler-right {
         width: 80%;
     }
 
-    .facebook-button {
+    .discord-button {
         width: 80%;
     }
 }
