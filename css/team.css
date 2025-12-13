@@ -176,8 +176,8 @@
     background-color: #2196F3;
     z-index: 9;
     cursor: ew-resize;
-    width: 40px;
-    height: 40px;
+    width: 4vw;
+    height: 4vw;
     opacity: 0.7;
     border-radius: 50%;
 }
