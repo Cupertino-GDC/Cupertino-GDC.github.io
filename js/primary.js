@@ -11,7 +11,7 @@ function stretchNavbar() {
     var navbarDiv = document.getElementById("navbar-div");
     
     if(navbarDiv.style.height == "75px" || navbarDiv.style.height == "") {
-        navbarDiv.style.height = "275px";
+        navbarDiv.style.height = "400px";
     } else {
         navbarDiv.style.height = "75px";
     }
