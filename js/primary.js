@@ -1,3 +1,46 @@
+document.addEventListener('DOMContentLoaded', function () {
+    applyConfig();
+});
+
+async function applyConfig() {
+    try {
+        var response = await fetch('/data/config.json');
+        if (!response.ok) return;
+        var config = await response.json();
+        applyPageVisibility(config.pages);
+    } catch (e) {
+        // fail silently — show everything if config can't be loaded
+    }
+}
+
+var PAGE_HREF_MAP = {
+    '/lessons.html': 'lessons',
+    '/about.html': 'about',
+    '/events.html': 'events',
+    '/arcade.html': 'arcade',
+    '/team.html': 'team'
+};
+
+function applyPageVisibility(pages) {
+    document.querySelectorAll('.navbutton').forEach(function (btn) {
+        var href = btn.getAttribute('href') || '';
+        var key = PAGE_HREF_MAP[href];
+        if (!key && href.includes('melonjam')) key = 'melonjam';
+        if (key && pages[key] === false) {
+            var item = btn.closest('.nav-item');
+            if (item) item.style.display = 'none';
+        }
+    });
+
+    document.querySelectorAll('.footer-link').forEach(function (link) {
+        var href = link.getAttribute('href') || '';
+        var key = PAGE_HREF_MAP[href];
+        if (key && pages[key] === false) {
+            link.style.display = 'none';
+        }
+    });
+}
+
 function scrollToElement(elementName, position) {
     var element = document.getElementById(elementName);
 	element.scrollIntoView({behavior: "smooth", block: position, inline: "nearest"});
@@ -9,9 +52,10 @@ function scrollToTop() {
 
 function stretchNavbar() {
     var navbarDiv = document.getElementById("navbar-div");
+    var navbarContent = document.getElementById("collapsibleNavbar");
     
     if(navbarDiv.style.height == "75px" || navbarDiv.style.height == "") {
-        navbarDiv.style.height = "275px";
+        navbarDiv.style.height = (navbarContent.scrollHeight + 95) + "px";
     } else {
         navbarDiv.style.height = "75px";
     }
