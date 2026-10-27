@@ -1,0 +1,10 @@
+{
+  "pages": {
+    "home": true,
+    "lessons": true,
+    "about": true,
+    "events": true,
+    "team": true,
+    "melonjam": true
+  }
+}
