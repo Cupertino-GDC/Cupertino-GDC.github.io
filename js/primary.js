@@ -14,10 +14,9 @@ async function applyConfig() {
 }
 
 var PAGE_HREF_MAP = {
-    '/lessons.html': 'lessons',
+    'https://lessons.tinogdc.org/': 'lessons',
     '/about.html': 'about',
     '/events.html': 'events',
-    '/arcade.html': 'arcade',
     '/team.html': 'team'
 };
 
